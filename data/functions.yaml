@@ -1,0 +1,16 @@
+Data::Dumper::Concise:
+  import: ~
+Encode:
+  import: ~
+List::MoreUtils:
+  import: :all
+List::Util:
+  sniff_var: EXPORT_OK
+Path::Class:
+  import: ~
+Perl6::Say:
+  import: ~
+Scalar::Util:
+  sniff_var: EXPORT_OK
+Time::Piece:
+  import: ~
