@@ -1,0 +1,34 @@
+NAME
+    Util::Autoload - Exports and autoloads useful functions
+
+SYNOPSIS
+      use Util::Autoload; # simply use, and now you can ...
+
+      # automatically loads Data::Dumper::Concise, Path::Class
+      warn +Dumper [ file(__FILE__)->slurp ];
+
+      # automatically loads Perl6::Say, Time::Piece
+      say localtime()->datetime;
+
+DESCRIPTION
+    Util::Autoload exports common functions provided by other useful
+    modules. The modules are not loaded until the exported function is
+    called.
+
+SUPPORTTED MODULES
+    Perl6::Say
+    Path::Class
+    Data::Dumper::Concise
+    Encode
+    List::Util
+    List::MoreUtils
+    Scalar::Util
+    Time::Piece
+
+AUTHOR
+    motemen <motemen@gmail.com>
+
+LICENSE
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
